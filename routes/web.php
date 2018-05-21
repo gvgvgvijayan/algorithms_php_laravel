@@ -18,4 +18,6 @@ Route::get('/', function () {
 Route::namespace('algorithms')->prefix('algorithm')->group(function() {
     Route::get('/search/binary', 'SearchController@binarySearch');
     Route::get('/sort/selection', 'SortController@selectionSort');
+    Route::get('/recursion/countdown/{i}', 'RecursionController@countDown');
+    Route::get('/recursion/factorial/{i}', 'RecursionController@factorial');
 });
